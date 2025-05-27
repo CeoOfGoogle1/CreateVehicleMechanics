@@ -73,7 +73,7 @@ repositories {
     maven { url 'https://maven.parchmentmc.org' }
     maven { url 'https://maven.quiltmc.org/repository/release' }
     maven { url 'https://maven.blamejared.com/' }
-
+    maven { url = 'https://maven.valkyrienskies.org'}
     maven {
         url 'https://maven.tterrag.com/'
         content {
@@ -98,14 +98,16 @@ dependencies {
     implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
-
+    implementation fg.deobf("curse.maven:valkyrien-skies-258371:6510608")
+    implementation fg.deobf("curse.maven:kotlin-for-forge-351264:5402061")
+    implementation fg.deobf("curse.maven:cloth-config-348521:5729105")
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
 
     // Mixin
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+   // annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 
