@@ -30,7 +30,7 @@ ordering = "BEFORE"
 side = "BOTH"
 [[dependencies.createvehiclemechanics]]
 modId = "valkyrienskies"
-mandatory = true
+mandatory = false
 versionRange = "[2.0.0,)"
 ordering = "AFTER"
 side = "BOTH"

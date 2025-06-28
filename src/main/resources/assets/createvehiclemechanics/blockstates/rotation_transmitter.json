@@ -1,0 +1,23 @@
+
+{
+  "variants": {
+    "facing=down": {"model": "createvehiclemechanics:block/rotation_transmitter", "x": 180},
+    "facing=up": {"model": "createvehiclemechanics:block/rotation_transmitter"},
+    "facing=north": { "model": "createvehiclemechanics:block/rotation_transmitter", "x": 90},
+    "facing=south": {
+      "model": "createvehiclemechanics:block/rotation_transmitter",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createvehiclemechanics:block/rotation_transmitter",
+      "x": 90,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "createvehiclemechanics:block/rotation_transmitter",
+      "x": 90,
+      "y": 90
+    }
+  }
+}
